@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlogSite</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <div class="logo">B</div>
+        <div>
+          <h1 class="site-title">BlogSite</h1>
+          <p class="site-tagline">Short thoughts, clean design.</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#post-1">First Meetings</a>
+        <a href="#post-2">JavaScript…</a>
+        <a href="#post-3">Backend is Not For Beginners</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Welcome 👋</h2>
+        <p>
+          This is a simple blog built using HTML, CSS, and JavaScript.
+          It supports navigation and per-post comments.
+        </p>
+        <div class="hero-meta">
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">Responsive</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="posts">
+      
+       <article class="post-card" id="post-1">
+        <div class="post-media">
+          <img src="https://picsum.photos/seed/meeting/1200/700" alt="Blog cover image">
+        </div>
+
+        <div class="post-content">
+          <div class="post-top">
+            <h3 class="post-title">First Meetings</h3>
+            <time class="post-date" datetime="2026-01-01">Jan 1, 2026</time>
+          </div>
+
+          <p class="post-text">
+            Hey guys! This is my very first blog post! Initially I was trying a bit too hard to figure out what to write,
+            but then I just decided to go with the flow!! Man, I am nervous and excited at the same time! Hope you all are entertained!!!
+          </p>
+
+          
+          <section class="comments" data-post="post-1">
+            <h4>Comments</h4>
+
+            <form class="comment-form">
+              <input class="comment-name" type="text" placeholder="Your name" maxlength="30" required>
+              <textarea class="comment-message" placeholder="Write a comment..." maxlength="200" required></textarea>
+              <button type="submit">Post Comment</button>
+              <p class="hint">Max 200 characters.</p>
+            </form>
+
+            <ul class="comment-list"></ul>
+          </section>
+        </div>
+      </article>
+
+      
+      <article class="post-card" id="post-2">
+        <div class="post-media">
+          <img src="https://picsum.photos/seed/javascript/1200/700" alt="Blog cover image">
+        </div>
+
+        <div class="post-content">
+          <div class="post-top">
+            <h3 class="post-title">JavaScript…</h3>
+            <time class="post-date" datetime="2026-01-05">Jan 5, 2026</time>
+          </div>
+
+          <p class="post-text">
+            So this is a simple blog made from HTML and CSS. and I'll have to use JavaScript as well.
+            While I have little to no problem with the former two, I really struggle with the latter.
+            I'm REALLY NOT a fan of JavaScript. Why is it so tough to master?!
+          </p>
+
+          <section class="comments" data-post="post-2">
+            <h4>Comments</h4>
+
+            <form class="comment-form">
+              <input class="comment-name" type="text" placeholder="Your name" maxlength="30" required>
+              <textarea class="comment-message" placeholder="Write a comment..." maxlength="200" required></textarea>
+              <button type="submit">Post Comment</button>
+              <p class="hint">Max 200 characters.</p>
+            </form>
+
+            <ul class="comment-list"></ul>
+          </section>
+        </div>
+      </article>
+
+      
+        <article class="post-card" id="post-3">
+        <div class="post-media">
+          <img src="https://picsum.photos/seed/backend/1200/700" alt="Blog cover image">
+        </div>
+
+        <div class="post-content">
+          <div class="post-top">
+            <h3 class="post-title">Backend is Not For Beginners</h3>
+            <time class="post-date" datetime="2026-01-10">Jan 10, 2026</time>
+          </div>
+
+          <p class="post-text">
+            I mean, I can still handle the frontend, but the backend? To this day, I have absolutely no idea how to do it.
+            I know that frontend and backend are both two sides of the same coin and that both are equally important,
+            but backend is near impossible for me to master. So to all those working as backend developers, hats off to you guys!!!
+          </p>
+
+          <section class="comments" data-post="post-3">
+            <h4>Comments</h4>
+
+            <form class="comment-form">
+              <input class="comment-name" type="text" placeholder="Your name" maxlength="30" required>
+              <textarea class="comment-message" placeholder="Write a comment..." maxlength="200" required></textarea>
+              <button type="submit">Post Comment</button>
+              <p class="hint">Max 200 characters.</p>
+            </form>
+
+            <ul class="comment-list"></ul>
+          </section>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 BlogSite • Built using HTML, CSS & JS</p>
+      <a href="#top" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html> 
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlogSite</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <div class="logo">B</div>
+        <div>
+          <h1 class="site-title">BlogSite</h1>
+          <p class="site-tagline">Short thoughts, clean design.</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#post-1">Hollow Knight</a>
+        <a href="#post-2">Batman: Arkham Origins</a>
+        <a href="#post-3">Assassin's Creed: Origins</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Welcome 👋</h2>
+        <p>
+          This is a simple blog built using HTML, CSS, and JavaScript.
+          It supports navigation and per-post comments.
+        </p>
+        <div class="hero-meta">
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">Responsive</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="posts">
+      
+      <article class="post-card" id="post-1">
+        <div class="post-media">
+          <img src="https://picsum.photos/seed/meeting/1200/700" alt="Blog cover image">
+        </div>
+
+        <div class="post-content">
+          <div class="post-top">
+            <h3 class="post-title">Hollow Knight</h3>
+            <time class="post-date" datetime="2026-01-01">Jan 1, 2026</time>
+          </div>
+
+          <p class="post-text">
+            Now, when I heard of this game for the first time, I only heard about its insanely popular sequel, Hollow Knight: Silksong, that released
+        in September 2025 and had amazing reviews. So naturally, I was curious about the first game, Hollow Knight.
+        <br>
+        <br>
+        Little did I know that I'd be playing one of the greatest games of all time!!!
+              <br><br>
+        I've personally always had a fondness of Metroidvania games, so I was immediately hooked. The brilliant soundtrack also played a huge role
+         in the gameplay. One of my favourite things about the game was that it had no difficulty slider, so rather than forcing the game to adjust
+         to my difficulty level, I was the one who adapted to the game's difficulty. Most of the bost fights were difficult, but they weren't impossible
+         to beat. One just needs patience, practice and some strategic and analytical skills. This game punishes you for not having these qualities,
+         something that I've learnt the hard way.
+         Hollow Knight also lacks handholding, meaning that you have no idea to know where to head next, only figuring it out as you progress in the game.
+            That said, that is part of the game's charm. I really loved exploring the various areas. And the satisfaction of 
+            defeating a difficult boss or learning about secret areas and items is something that can only be experienced by playing. <br>
+        
+        As much as I absolutely loved the game, it had a few flaws; for starters, there's the constant backtracking;
+        as for the enemies, some were easy to defeat, most were difficult, but enjoyable, but there's a third category that's just... downright annoying, and I'm being nice here.
+        As for the story and lore, they're somewhat vague, like you have to put each and every detail together to learn the backstory.
+        Now, these complaints aside, I would highly recommend this game to anyone who likes difficult games and Metroidvania-style games.
+        Truly, this is the one that got me back into gaming.
+          
+
+          
+          <section class="comments" data-post="post-1">
+            <h4>Comments</h4>
+
+            <form class="comment-form">
+              <input class="comment-name" type="text" placeholder="Your name" maxlength="30" required>
+              <textarea class="comment-message" placeholder="Write a comment..." maxlength="200" required></textarea>
+              <button type="submit">Post Comment</button>
+              <p class="hint">Max 200 characters.</p>
+            </form>
+
+            <ul class="comment-list"></ul>
+          </section>
+        </div>
+      </article>
+
+      
+      <article class="post-card" id="post-2">
+        <div class="post-media">
+          <img src="https://picsum.photos/seed/javascript/1200/700" alt="Blog cover image">
+        </div>
+
+        <div class="post-content">
+          <div class="post-top">
+            <h3 class="post-title">Batman: Arkham Origins</h3>
+            <time class="post-date" datetime="2026-01-05">Jan 5, 2026</time>
+          </div>
+
+          <p class="post-text">
+            I was first introduced to this game by my cousin, and he let me play it on his PC. And now that I actually own it, it was time to play it 
+            on mine! I liked just about everything in this game. While the plot was fine, the combat and exploration was what caught my attention.
+            And the best parts: Bane and Joker. Unlike the previous two games, Bane was a legitimate threat in this one, which I liked.
+            Overall, even though it was the least played game of the three in the above mentioned time period, I enjoyed it .
+          </p>
+
+          <section class="comments" data-post="post-2">
+            <h4>Comments</h4>
+
+            <form class="comment-form">
+              <input class="comment-name" type="text" placeholder="Your name" maxlength="30" required>
+              <textarea class="comment-message" placeholder="Write a comment..." maxlength="200" required></textarea>
+              <button type="submit">Post Comment</button>
+              <p class="hint">Max 200 characters.</p>
+            </form>
+
+            <ul class="comment-list"></ul>
+          </section>
+        </div>
+      </article>
+
+      
+      <article class="post-card" id="post-3">
+        <div class="post-media">
+          <img src="https://picsum.photos/seed/backend/1200/700" alt="Blog cover image">
+        </div>
+
+        <div class="post-content">
+          <div class="post-top">
+            <h3 class="post-title">Assassin's Creed: Origins</h3>
+            <time class="post-date" datetime="2026-01-10">Jan 10, 2026</time>
+          </div>
+
+          <p class="post-text">
+            Now, I have always been a fan of Assassin's Creed since I entered my teenage years, and this was one of the games that I'd been 
+        dying to play ever since it first came out. Well... Once I got the game and started playing it, it was running well
+        for a while. Then I got disappointed.
+         <br>
+         <br>
+         Now before you start trashing and cursing me in God knows how many languages, I just want to clarify that it was a system issue.
+         The specs were highly advanced, and my PC was freezing the game continuously, even though the graphics were at their lowest
+         settings. It was only when I lowered the resolution and kept the laptop in a certain position that it was running smoothly.
+         Well, as smoothly as possible, and even then, there were freezing issues, but far less frequent than before.
+         <br>
+         <br>
+         Now, system issues and freezing aside aside, the game itself was phenominal. The story, the combat, the upgrades,
+         the RPG system; everything was well made. Although, I did feel overwhelmed at times with all the exploration
+         and side quests. I'd still recommend it to anyone with a proper system and love of RPGs.
+          </p>
+
+          <section class="comments" data-post="post-3">
+            <h4>Comments</h4>
+
+            <form class="comment-form">
+              <input class="comment-name" type="text" placeholder="Your name" maxlength="30" required>
+              <textarea class="comment-message" placeholder="Write a comment..." maxlength="200" required></textarea>
+              <button type="submit">Post Comment</button>
+              <p class="hint">Max 200 characters.</p>
+            </form>
+
+            <ul class="comment-list"></ul>
+          </section>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 BlogSite • Built using HTML, CSS & JS</p>
+      <a href="#top" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html> --> -->
